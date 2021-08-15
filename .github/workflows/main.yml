@@ -22,10 +22,3 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
-        
-    - name: Build npm install
-      with:
-          node-version: "14.17.1"
-      uses: jaid/action-npm-install@v1.2.1
-  # uses: Jaid/action-npm-install@9483da054882538350947c4147de4c8adbf0d597
-  uses: Jaid/action-npm-install@v1.2.4
